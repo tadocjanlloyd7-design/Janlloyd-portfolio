@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: Midnightblue(18, 4, 66);
+    color: rgb(30, 32, 168);
+}
+
+header {
+    background-color: rgb(3, 3, 141);
+    padding: 20px;
+    position: sticky;
+    top: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(34, 196, 233);
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    color: rgb(12, 188, 241);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: rgb(3, 41, 2);
+}
+
+/* Home Section */
+.home {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, skyblue, rgb(199, 16, 16));
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span,
+.about h2 span,
+.contact h2 span {
+    color: blue;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(143, 13, 13);
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: white(236, 238, 240, 0.986);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: cyan;
+    transform: translate(-3px);
+}
+
+/* About section */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: lightblue(70, 60, 211, 0.932);
+}
+
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px 10%;
+    text-align: center;
+    background-color: rgb(221, 221, 238);
+}
+
+.skills h3,
+.skills h3 {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.skills p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.contact > p {
+    margin-bottom: 25px;
+    line-height: 10;
+}
+
+.contact-info {
+    margin-bottom: 25px;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(14, 17, 189);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 412px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+}
