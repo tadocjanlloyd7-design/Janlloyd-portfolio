@@ -57,7 +57,7 @@ nav ul li a:hover{
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .home-content h1 {
@@ -112,7 +112,7 @@ nav ul li a:hover{
 }
 
 .about p {
-    max-width: 750px;
+    max-width: 700px;
     margin: auto;
     font-size: 17px;
     line-height: 1.9;
@@ -159,7 +159,6 @@ nav ul li a:hover{
     line-height: 2;
 }
 
-/* Footer */
 footer {
     background-color: rgb(14, 17, 189);
     color: white;
@@ -167,7 +166,6 @@ footer {
     padding: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 412px) {
     header {
         padding: 20px 5%;
